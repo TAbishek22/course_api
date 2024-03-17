@@ -10,7 +10,13 @@ const port = 3000;
 
 // Middleware
 app.use(
-    cors()
+    cors(
+         {
+      origin: ["https://course-ap.vercel.app/"],
+      methods: ["POST", "GET"],
+       credentials: true,    
+         }
+    )
 );
 
 
