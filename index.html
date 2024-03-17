@@ -64,7 +64,7 @@
                     const details = document.getElementById("details").value;
 
                     const response = await fetch(
-                        `http://localhost:3000/courses`,
+                        `https://course-ap.vercel.app/courses`,
                         {
                             method: "POST",
                             headers: {
@@ -100,7 +100,7 @@
                     console.log("Hello", data);
                     task.value = "";
                     const res2 = await fetch(
-                        `http://localhost:3000/courses/${data}`
+                        `https://course-ap.vercel.app/courses/${data}`
                     );
                     const response = await res2.json();
                     const data2 = response;
