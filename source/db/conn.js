@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
 mongoose
-    .connect("mongodb://127.0.0.1:27017/courseAPI")
+    .connect("mongodb+srv://second-vercel:s6FtQfDNZvcJYqb5@cluster2.dj2va59.mongodb.net/")
     .then(() => console.log("Database is connected"))
     .catch(() => console.log("database is not connected"));
